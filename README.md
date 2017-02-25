@@ -19,7 +19,7 @@ double exact(double x)
 	return exp(x / 2.0)*sin(5.0 * x);
 }
 
-Step C-F *Pictures in Images Folder
+Step C-F *Pictures of graphs in Images Folder
 
 1) Describe how varying the integration method changes the accuracy.
 Open up the .PNGs from the Images folder for reference. If you take a look at Part1.PNG you can see that each method has its level of accuracy. 
@@ -32,8 +32,8 @@ As x increases, it can be seen that the variance from teh EXACT value starts to 
 But in all cases, as the x value increases the less accurate each method becomes. This can also be seen from the data charts in Part1a.PNG and Part1b.PNG. 
 
 3)How does varying the step size effect the accuracy.
-Turn your attention to Part1e.PNG and Part1f.PNG. I increased the step size to 2.3. 
-With this increase, you can see how sharply it jumps between each points instead of the even flow from the previous images. 
+Turn your attention to Part1e.PNG, Part1f.PNG, and Part1g.PNG.  
+With these increases, you can see how sharply it jumps between each points instead of the even flow from the previous images. 
 You can see the error percentage shoot way up from the the event snapshot I took. With these increased step sizes, it is easier 
 to visualize with the graphs and data charts to see the variances.  
 
