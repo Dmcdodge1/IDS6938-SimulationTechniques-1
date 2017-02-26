@@ -22,9 +22,9 @@ Step B:
 	}
 
 Step C-F *Pictures of graphs in Images Folder
-![](images/Part1a.png?raw=true) ![](images/Part1b.png?raw=true) ![](images/Part1c.png?raw=true)
-![](images/Part1d.png?raw=true) ![](images/Part1e.png?raw=true) ![](images/Part1f.png?raw=true)
-![](images/Part1g.png?raw=true)
+![](Images/Part1a.png?raw=true) ![](Images/Part1b.png?raw=true) ![](Images/Part1c.png?raw=true)
+![](Images/Part1d.png?raw=true) ![](Images/Part1e.png?raw=true) ![](Images/Part1f.png?raw=true)
+![](Images/Part1g.png?raw=true)
 
 1) Describe how varying the integration method changes the accuracy.
 	Open up the .PNGs from the Images folder for reference. If you take a look at Part1.PNG you can see that each method has its level of accuracy. 
