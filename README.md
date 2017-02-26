@@ -2,7 +2,7 @@
 Official website for IDS6938 Simulation Techniques
 
 Devyn Dodge
-Note: Discussed some code with classmates/chat
+Note: Discussed some code with classmates/chat.
 Pulled the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pulled from sources from class and meetup sessions. 
 
@@ -22,6 +22,7 @@ Step B:
 	}
 
 Step C-F *Pictures of graphs in Images Folder
+
 |![](Images/Part1a.png?raw=true) | ![](Images/Part1b.png?raw=true) | ![](Images/Part1c.png?raw=true)
 |![](Images/Part1d.png?raw=true) | ![](Images/Part1e.png?raw=true) | ![](Images/Part1f.png?raw=true)
 |![](Images/Part1g.png?raw=true) |
