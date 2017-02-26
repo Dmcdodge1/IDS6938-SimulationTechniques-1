@@ -1,0 +1,3 @@
+C:/Users/Devyn/Desktop/Homework1/Homework1-Part2/jellocube-basecode/build/CMakeFiles/jello.dir
+C:/Users/Devyn/Desktop/Homework1/Homework1-Part2/jellocube-basecode/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Devyn/Desktop/Homework1/Homework1-Part2/jellocube-basecode/build/CMakeFiles/ZERO_CHECK.dir

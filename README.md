@@ -1,6 +1,7 @@
 # IDS6938-SimulationTechniques
 Official website for IDS6938 Simulation Techniques
 Devyn Dodge
+Note: Asked for assitance from classmates for some coding aspects. 
 
 Step A:
 
