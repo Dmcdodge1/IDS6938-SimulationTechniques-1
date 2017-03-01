@@ -7,6 +7,7 @@ Note: Discussed some code with classmates/chat.
 Pulled the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pieced together from sources from class and meetup sessions. 
 
+Part 1:
 Step A:
 
 	exp(x / 2.0)*sin(5.0 * x);
@@ -20,10 +21,23 @@ Step B:
 		return exp(x / 2.0)*sin(5.0 * x);
 	}
 
-Step C-F *Pictures of graphs in Images Folder
+Step C:
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1a.PNG)
-![Alt text](IDS6938-SimulationTechniques-1/Homework1/images/Part1a.PNG?raw=true)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1b.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1c.PNG)
+
+Step D:
+
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1d.PNG)
+
+Step E:
+
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1e.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1f.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1g.PNG)
+
+Step F:
 
 1) Describe how varying the integration method changes the accuracy.
 
