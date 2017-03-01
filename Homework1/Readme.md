@@ -22,7 +22,8 @@ Step B:
 
 Step C-F *Pictures of graphs in Images Folder
 
-![](IDS6938-SimulationTechniques-1/Homework1/images/Part1a.PNG) 
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1a.PNG)
+![Alt text](IDS6938-SimulationTechniques-1/Homework1/images/Part1a.PNG?raw=true)
 
 1) Describe how varying the integration method changes the accuracy.
 
