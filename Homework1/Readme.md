@@ -23,25 +23,25 @@ Step B:
 
 Step C:
 
-Part1a
+Part1a 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1a.PNG)
-Part1b
+Part1b 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1b.PNG)
-Part1c
+Part1c 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1c.PNG)
 
 Step D:
 
-Part1d
+Part1d 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1d.PNG)
 
 Step E:
 
-Part1e
+Part1e 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1e.PNG)
-Part1f
+Part1f 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1f.PNG)
-Part1g
+Part1g 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1g.PNG)
 
 Step F:
@@ -53,7 +53,7 @@ The image shows the variance as time goes on.
 
 2) What happens as you increase the x value to the accuracy?
 
-Take a look at Part1d.PNG. This image clearly shows the accuracy as teh x value increases. The error percentages are how far off each method is from the EXACT result. 
+Take a look at Part1d.PNG. This image clearly shows the accuracy as the x value increases. The error percentages are how far off each method is from the EXACT result. 
 As x increases, it can be seen that the variance from teh EXACT value starts to show up, some more than others. But in all cases, as the x value increases the less accurate each method becomes. This can also be seen from the data charts in Part1a.PNG and Part1b.PNG. 
 
 3) How does varying the step size effect the accuracy.
