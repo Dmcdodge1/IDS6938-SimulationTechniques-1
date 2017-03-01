@@ -22,7 +22,7 @@ Step B:
 
 Step C-F *Pictures of graphs in Images Folder
 
-![](images/Part1a.png) 
+![](IDS6938-SimulationTechniques-1/Homework1/images/Part1a.PNG) 
 
 1) Describe how varying the integration method changes the accuracy.
 
