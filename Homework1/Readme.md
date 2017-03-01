@@ -23,19 +23,26 @@ Step B:
 
 Step C:
 
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1a.PNG "Part1a")
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1b.PNG "Part1b")
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1c.PNG "Part1c")
+Part1a
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1a.PNG)
+Part1b
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1b.PNG)
+Part1c
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1c.PNG)
 
 Step D:
 
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1d.PNG "Part1d")
+Part1d
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1d.PNG)
 
 Step E:
 
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1e.PNG "Part1e")
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1f.PNG "Part1f")
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1g.PNG "Part1g")
+Part1e
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1e.PNG)
+Part1f
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1f.PNG)
+Part1g
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Part1g.PNG)
 
 Step F:
 
