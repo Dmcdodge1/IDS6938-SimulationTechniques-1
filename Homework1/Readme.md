@@ -10,7 +10,8 @@ Euler and Midpoint were pieced together from sources from class and meetup sessi
 Part 1:
 Step A:
 
-	exp(x / 2.0)*sin(5.0 * x);
+	Exact Solution = exp(x / 2.0)*sin(5.0 * x);
+		*Thank you WolframAlpha
 
 Step B:
 
