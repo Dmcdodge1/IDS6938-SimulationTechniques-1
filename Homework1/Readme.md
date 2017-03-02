@@ -3,6 +3,8 @@
 Official website for IDS6938 Simulation Techniques
 
 Devyn Dodge
+PLEASE CHECK YOUR EMAILS FIRST.
+
 Note: Discussed some code with classmates/chat.
 Referenced the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pieced together by sources from class and meetup sessions. 
