@@ -6,6 +6,7 @@ Devyn Dodge
 Note: Discussed some code with classmates/chat.
 Referenced the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pieced together by sources from class and meetup sessions. 
+
 Cited: http://edutechwiki.unige.ch/en/X3D_shape_and_geometry 
 https://www.opengl.org/archives/resources/code/samples/glut_examples/examples/scube.c 
 https://www.w3schools.com/cssref/css_colors_legal.asp
@@ -95,10 +96,12 @@ Having the first, second, third, and fourth derivative/integration is way more a
 Part 2:
 
 I chose to implement for the 2 mandatory extra features:
+
 -A sphere collision
 -Create a movie of my jello cube environment (https://youtu.be/oSDw5t43vew)
 
 For extra credit I chose to implement:
+
 -Create a movie exploring the differences in integrations types and stiffness. (https://youtu.be/XigIpat2yFc)
 -Own choosing: Change the color? (If not totaly understandable, did it more for fun anyways.)
 
