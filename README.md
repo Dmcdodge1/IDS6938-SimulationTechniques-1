@@ -2,24 +2,3 @@
 Official website for IDS6938 Simulation Techniques
 
 Devyn Dodge
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-test
