@@ -7,7 +7,8 @@ Note: Discussed some code with classmates/chat.
 Referenced the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pieced together by sources from class and meetup sessions. 
 
-Cited: http://edutechwiki.unige.ch/en/X3D_shape_and_geometry 
+Cited: 
+http://edutechwiki.unige.ch/en/X3D_shape_and_geometry 
 https://www.opengl.org/archives/resources/code/samples/glut_examples/examples/scube.c 
 https://www.w3schools.com/cssref/css_colors_legal.asp
 https://www.cs.rpi.edu/~cutler/classes/advancedgraphics/S09/lectures/06_mass_spring_systems.pdf
@@ -98,15 +99,17 @@ Part 2:
 I chose to implement for the 2 mandatory extra features:
 
 -A sphere collision
+
 -Create a movie of my jello cube environment (https://youtu.be/oSDw5t43vew)
 
 For extra credit I chose to implement:
 
 -Create a movie exploring the differences in integrations types and stiffness. (https://youtu.be/XigIpat2yFc)
+
 -Own choosing: Change the color? (If not totaly understandable, did it more for fun anyways.)
 
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Cube.PNG)
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Cube2.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Cube.png)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework1/images/Cube2.png)
 
 Part 3:
 
