@@ -6,5 +6,10 @@
     <ground>
       <bodymaterial name="dirt" />
     </ground>
-  </bodies>
+<cylinder r="0.1" sx="0.20" sy="0.0" sz="0.00" ex="2.00" ey="1.00" ez="0.00"></cylinder>
+<cylinder r="0.1" sx="0.18" sy="0.0" sz="0.08" ex="1.85" ey="1.0" ez="0.77"></cylinder>
+<cylinder r="0.1" sx="0.14" sy="0.0" sz="-0.14" ex="1.41" ey="1.0" ez="-1.41"></cylinder>
+<cylinder r="0.1" sx="0.18" sy="0.0" sz="-0.08" ex="1.85" ey="1.0" ez="-0.77"></cylinder>
+<sphere r="0.3"></sphere>
+ </bodies>
 </world>

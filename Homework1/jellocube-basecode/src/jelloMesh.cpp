@@ -13,16 +13,16 @@
 //double JelloMesh::g_bendKd = 9.0;
 //double JelloMesh::g_penaltyKs = 0.75;
 //double JelloMesh::g_penaltyKd = 0.75;
-double JelloMesh::g_structuralKs = 2000.0; //high
-double JelloMesh::g_structuralKd = 10.0;    //low
+double JelloMesh::g_structuralKs = 2800.0; //high
+double JelloMesh::g_structuralKd = 6.0;    //low
 double JelloMesh::g_attachmentKs = 2000.0;
-double JelloMesh::g_attachmentKd = 10.0;
+double JelloMesh::g_attachmentKd = 6.0;
 double JelloMesh::g_shearKs = 2000.0; //
-double JelloMesh::g_shearKd = 10.0;//
+double JelloMesh::g_shearKd = 5.0;//
 double JelloMesh::g_bendKs = 2000.0;//
-double JelloMesh::g_bendKd = 10.0;//
-double JelloMesh::g_penaltyKs = 2000.0;
-double JelloMesh::g_penaltyKd = 10.0;
+double JelloMesh::g_bendKd = 6.0;//
+double JelloMesh::g_penaltyKs = 10000.0;
+double JelloMesh::g_penaltyKd = 6.0;
 
 JelloMesh::JelloMesh() :
 	m_integrationType(JelloMesh::RK4), m_drawflags(MESH | STRUCTURAL),
@@ -428,14 +428,10 @@ void JelloMesh::CheckForCollisions(ParticleGrid& grid, const World& world)
 				{
 					Intersection intersection;
 
-					if (world.m_shapes[i]->GetType() == World::CYLINDER &&
-						CylinderIntersection(p, (World::Cylinder*) world.m_shapes[i], intersection))
-					{
+					if (world.m_shapes[i]->GetType() == World::CYLINDER && CylinderIntersection(p, (World::Cylinder*) world.m_shapes[i], intersection)){
 						m_vcontacts.push_back(intersection);
 					}
-					else if (world.m_shapes[i]->GetType() == World::GROUND &&
-						FloorIntersection(p, intersection))
-					{
+					else if (world.m_shapes[i]->GetType() == World::GROUND && FloorIntersection(p, intersection)){
 						m_vcontacts.push_back(intersection);
 					}
 				}
@@ -519,7 +515,7 @@ void JelloMesh::ResolveCollisions(ParticleGrid& grid)
 		vec3 normal = result.m_normal;
 		float dist = result.m_distance;
 
-		//TO DO Asked for assistance 
+		//TO DO Asked some questions
 		pt.velocity -= 2 * (pt.velocity * normal) * normal * 0.75;
 		pt.position += dist * normal;
 	}
@@ -543,7 +539,7 @@ bool JelloMesh::FloorIntersection(Particle& p, Intersection& intersection) {
 	else {
 		return false;
 	}
-}
+}/*
 bool JelloMesh::CylinderIntersection(Particle& p, World::Cylinder* cylinder, JelloMesh::Intersection& result)
 {
 	vec3 cylinderStart = cylinder->start;
@@ -553,8 +549,39 @@ bool JelloMesh::CylinderIntersection(Particle& p, World::Cylinder* cylinder, Jel
 
 	// TODO
 	return false;
-}
+}*/
+bool JelloMesh::CylinderIntersection(Particle& p, World::Cylinder* cylinder,
+	JelloMesh::Intersection& result)
+{
+	vec3 cylinderStart = cylinder->start;
+	vec3 cylinderEnd = cylinder->end;
+	vec3 cylinderAxis = cylinderEnd - cylinderStart;
+	double cylinderRadius = cylinder->r;
+	vec3 point = cylinderStart + cylinder->r * cylinderAxis;
+	vec3 normal = p.position - point;
+	double dist = normal.Length();
+	normal = normal.Normalize();
 
+
+	if (dist < cylinderRadius + 0.07)
+	{
+		result.m_p = p.index;
+		result.m_distance = cylinderRadius;
+		result.m_type = CONTACT;
+		result.m_normal = normal;
+		return true;
+	}
+
+	else if (dist < cylinderRadius + 0.1  && dist > cylinderRadius + 0.03)
+	{
+		result.m_p = p.index;
+		result.m_distance = cylinderRadius;
+		result.m_type = COLLISION;
+		result.m_normal = normal;
+		return true;
+	}
+	return false;
+}
 
 // Look at again? 
 void JelloMesh::EulerIntegrate(double dt) {
