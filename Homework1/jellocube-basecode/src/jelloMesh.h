@@ -78,7 +78,7 @@ protected:
 	virtual void ResolveCollisions(ParticleGrid& grid);
 	virtual void ResolveContacts(ParticleGrid& grid);
 	virtual bool FloorIntersection(Particle& p, Intersection& intersection);
-	//virtual bool sphere_intersection(Particle& p, World::Sphere* sphere, Intersection& intersection); //copied the one below
+	virtual bool EC_Sphere_Intersection(Particle& p, World::Sphere* sphere, Intersection& intersection); //copied the one below
 	virtual bool CylinderIntersection(Particle& p, World::Cylinder* cylinder, Intersection& intersection);
 
 	virtual void ComputeForces(ParticleGrid& grid);
