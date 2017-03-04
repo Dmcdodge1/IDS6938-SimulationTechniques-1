@@ -3,11 +3,12 @@
 Official website for IDS6938 Simulation Techniques
 
 Devyn Dodge
-PLEASE CHECK YOUR EMAILS FIRST.
-
 Note: Discussed some code with classmates/chat.
 Referenced the setup of structural springs and bend springs from Piazza.
 Euler and Midpoint were pieced together by sources from class and meetup sessions. 
+Cylinder and Sphere involved piecing together a few people ideas into mine, until I found the right way to code it so it worked.
+
+P.S. Reminder: Graciously provided me with some leeway for the mishap that happened with my code.
 
 Cited: 
 http://edutechwiki.unige.ch/en/X3D_shape_and_geometry 
