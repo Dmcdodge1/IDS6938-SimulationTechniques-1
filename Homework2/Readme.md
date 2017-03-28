@@ -27,9 +27,10 @@ The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
 When changing the N to a much higher number, patterns were substantially clearer compared to the lower Ns. Because this is "random" I ran this experiment a few times and obtained fluctuating results. Means, ranges, variances, Chi scores, Standard deviations, etc. all fluctuated lower and higher than the very large data set of 100,000. For the most part though, the variances of the smaller data sets were larger as well as the standard deviations, but once again this is "random," so it can be flipped around if I were to run it again.
 
-I chose the minstd_rand engine.
 
 * **(c)- 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
+
+I chose the minstd_rand engine.
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/partc.PNG)
 
