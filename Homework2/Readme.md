@@ -1,15 +1,27 @@
 ﻿#Homework 2 :  Discrete-Event Simulation Assignment
 
 ## IDS6938-Simulation Techniques - [University of Central Florida](http://www.ist.ucf.edu/grad/)
-[University of Central Florida](http://www.ist.ucf.edu/grad/) This is the framework for homework #2. 
+
+[University of Central Florida](http://www.ist.ucf.edu/grad/) This is the framework for homework #2.
+ 
 The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
 # Devyn Dodge 
 
-##Part 1: Empirical Tests of Randomness (20 pts).
-We looked at different ways to generate [pseudo-random numbers](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) and [quasi random numbers](https://en.wikipedia.org/wiki/Low-discrepancy_sequence). Generating random numbers are crucial to Discrete-Event simulations which rely on random variables and stochastic processes. This problem explores different random number generators, distributions, and statistics. Different [C++ pseudo-random numbers engines are instantiated](http://www.cplusplus.com/reference/random/) already for you. Also a a wide variety of standard distributions are implemented. Two quasi random number generators are also provided.
-* **(a) - 3pts:** Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
-|[](images/all.png?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|[](images/snake2.jpg?raw=true)|
+# Part 1
+
+Step A:
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/all.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Variance.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/SEM.PNG)
+![Alt text](https://https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/SD.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Range.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Mode.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Median.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Mean.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Max.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Chi.PNG)
+
 * **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
 * **(c) - 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
 * **(d)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.
