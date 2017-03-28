@@ -11,10 +11,11 @@ The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 # Part 1
 
 Step A:
+
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/all.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Variance.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/SEM.PNG)
-![Alt text](https://https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/SD.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/SD.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Range.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Mode.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Median.PNG)
