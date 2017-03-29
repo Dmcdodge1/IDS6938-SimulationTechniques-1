@@ -45,7 +45,7 @@ Parts D and E are below.
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/partf.PNG)
 
-##Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
+# Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
 
 * **(a) Null State Game transition matrix - 10pts:** The *null state game* is defined by a game with no snakes and no ladders. This simplifies the game to just the moves of the two dice rolls. Create the transition matrix for the null state game. The Transition Matrix would be decided by the roll of a fair, six-sided die, so it would start to look like:
 <BR>![](images/null.png?raw=true)<BR>
@@ -76,7 +76,7 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 * **(d) Think - 0pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
 
-##Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
+# Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
 
 I have a working example in my folders. Here are some pictures of it working.
 
@@ -85,12 +85,26 @@ I have a working example in my folders. Here are some pictures of it working.
 
 * **(e) - 15pts:** Download the personal edition of **[Anylogic](http://www.anylogic.com/)**, read through the [documentation](http://www.anylogic.com/learn-simulation) as needed, and set up the same type of simulation discussed above.
 
+Anylogic folder also uploaded.
 
-##Part 4 - Implementing Extra Features (10 pts)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/anylogic.PNG)
+
+# Part 4 - Implementing Extra Features (10 pts)
+
 Implementing 2 features on the extra features list. Pick any feature on the "*extra features*" list below to customize your assignment to fit your interests. Please document this in your writeup. (*Note: These should total 10pts. You could successfully implement a feature worth 10pts or greater. This also fulfills this requirement. The features are assigned points based on difficulty. The 5pt features are more straightforward.*)
 
-##Part 5 - Final Report (10 pts)
+For another class I am doing research on how different assembly lines alter total output and I thought this would be a great addition. I can improve upon this and even create different layouts!
+* **(10 Points)** - Setup another resource allocation / queueing problem related to your research in Anylogic with a basic visualization
 
+Anylogic folder also uploaded.
+
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Extra.PNG)
+
+# Part 5 - Final Report (10 pts)
+
+Completed! 
+
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/face.JPG)
 
 ##Extra Features (Extra Credit - 25pts)
 You have to implement two features from this list for Part 4. You may choose any two features you wish from this list. (Please explicitly note them in your *Readme.md*)
