@@ -48,12 +48,6 @@ int main() {
 		myfile << std::endl;
 	}
 	//Returns an array discreteMC with the states at each step of the discrete-time Markov Chain
-	//The number of transitions is given by steps. The initial state is given by start 
-	//(the states are indexed from 0 to n-1 where n is the number of arrays in transMatrix).
-	//hist is the histogram 
-
-
-	// (double)p.second / N    - (decimal) percentage.
 	for (auto p : hist) {
 		std::cout << p.first << "\t" << (double)p.second / N << std::endl;
 	}
