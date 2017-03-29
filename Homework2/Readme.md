@@ -102,9 +102,9 @@ Anylogic folder also uploaded.
 
 # Part 5 - Final Report (10 pts)
 
-Completed! 
+Write up the results to the previous sections in the main readme.md in your forked repository. Turn in the URL for your fork in webcourses. Be visual. The report should contain the graphs and analysis requested. I have high expectations for the documentation here and you should allot the proper time to compose the writeup.
 
-![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/face.JPG)
+Completed! 
 
 ##Extra Features (Extra Credit - 25pts)
 You have to implement two features from this list for Part 4. You may choose any two features you wish from this list. (Please explicitly note them in your *Readme.md*)

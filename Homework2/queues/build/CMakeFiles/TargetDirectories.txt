@@ -1,0 +1,3 @@
+C:/Users/Devyn/Desktop/Homework2/queues/build/CMakeFiles/MM1.dir
+C:/Users/Devyn/Desktop/Homework2/queues/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Devyn/Desktop/Homework2/queues/build/CMakeFiles/ZERO_CHECK.dir

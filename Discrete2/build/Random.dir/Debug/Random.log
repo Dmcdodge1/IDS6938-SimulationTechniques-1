@@ -1,0 +1,3 @@
+﻿  random.cpp
+C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\random.cpp(57): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Random.vcxproj -> C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\build\Debug\Random.exe

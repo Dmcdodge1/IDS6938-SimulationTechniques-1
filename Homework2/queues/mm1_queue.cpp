@@ -75,13 +75,15 @@ void MM1_Queue::initialize()
     if (!initialized_)
     {
 
-      //TODO---------------------------------------------
-      expected_server_utilization_ ;
-      expected_idle_prob_ ;
-      expected_queue_length_ ;
-      expected_number_customers_ ;
-      expected_waiting_time_ ;
-      expected_response_time_ ;
+      //TODO---------------------------------------------PIAZZA/GROUP HELP 
+		expected_server_utilization_ = lambda_/mu_; //************** BLAHHHHHHHHHHHHHH
+
+		expected_idle_prob_ = 1-expected_server_utilization_;
+		expected_queue_length_ = (expected_server_utilization_*expected_server_utilization_)/(expected_idle_prob_);
+		expected_number_customers_ = expected_server_utilization_*expected_idle_prob_*(1/(expected_idle_prob_*expected_idle_prob_));
+		expected_waiting_time_ = expected_server_utilization_/(mu_ - lambda_); //************** BLAHHHHHHHHHHHHHHH AGAIN
+
+		expected_response_time_ = 1 / (mu_ - lambda_);
       // ------------------------------------------------
 
       rnd_arrival.set_rate(lambda_);

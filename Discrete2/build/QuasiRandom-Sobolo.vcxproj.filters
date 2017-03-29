@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\quasi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\sobol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\sobol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B530C2F-C436-3A12-8322-2C7493EAF1BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A307BC75-93DB-3A08-81D6-8A7C3B164ED3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

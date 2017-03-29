@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\dice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B530C2F-C436-3A12-8322-2C7493EAF1BF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

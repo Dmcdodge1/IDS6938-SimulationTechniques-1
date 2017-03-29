@@ -1,0 +1,3 @@
+﻿  quasi.cpp
+C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\quasi.cpp(64): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  QuasiRandom-Sobolo.vcxproj -> C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\build\Debug\QuasiRandom-Sobolo.exe

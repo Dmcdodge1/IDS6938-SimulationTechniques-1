@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/Devyn/Desktop/IDS6938-SimulationTechniques-1/Discrete2/CMakeLists.txt
+  CMake does not need to re-run because C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\build\CMakeFiles\generate.stamp is up-to-date.
+  dice.cpp
+C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\dice.cpp(51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  DiceRoll.vcxproj -> C:\Users\Devyn\Desktop\IDS6938-SimulationTechniques-1\Discrete2\build\Debug\DiceRoll.exe
