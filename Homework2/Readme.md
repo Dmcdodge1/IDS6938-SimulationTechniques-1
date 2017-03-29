@@ -8,7 +8,7 @@ The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
 # Devyn Dodge 
 
-# Part 1
+# Part 1: Empirical Tests of Randomness (20 pts)
 
 * **(a) - 3pts: Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
 
