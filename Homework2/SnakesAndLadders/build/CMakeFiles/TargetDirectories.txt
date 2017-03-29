@@ -1,0 +1,4 @@
+C:/Users/Devyn/Desktop/IDS6938-SimulationTechniques-1/Homework2/SnakesAndLadders/build/CMakeFiles/DTMC.dir
+C:/Users/Devyn/Desktop/IDS6938-SimulationTechniques-1/Homework2/SnakesAndLadders/build/CMakeFiles/Markov.dir
+C:/Users/Devyn/Desktop/IDS6938-SimulationTechniques-1/Homework2/SnakesAndLadders/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Devyn/Desktop/IDS6938-SimulationTechniques-1/Homework2/SnakesAndLadders/build/CMakeFiles/ZERO_CHECK.dir
