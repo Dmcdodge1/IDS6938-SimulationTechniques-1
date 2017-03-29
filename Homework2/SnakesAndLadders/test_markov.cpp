@@ -22,15 +22,22 @@ int main(){
 	std::ofstream myfile;
 	myfile.open("markov_results.txt");
 
-	
-   // TODO add Markov vector - Matrix multiplication
+	for (int j = 0; j < 20; j++) {
 
+   // TODO 
+   //Helped by Sarah***** I think she was helped by others as well. May be pretty similar
+	//Cited: http://www.datagenetics.com/blog/november12011/
 
-	std::cout <<  v << std::endl;
-	//myfile << v << std::endl;  //this is just a sample, becareful how you print to file so you can mine useful stats
-	
+	v = v.transpose() * TransitionMatrix; //got this bad boy online 
+		for (int i = 0; i < size; i++) { 
+
+			std::cout << v(i) << ", ";
+			myfile << v(i) << ", ";  
+		}
+	std::cout << std::endl;
+	myfile << std::endl;
+	}
 	myfile.close();
 
-
-  return 1;
+	return 1;
 }

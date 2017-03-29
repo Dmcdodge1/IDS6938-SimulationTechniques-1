@@ -14,6 +14,10 @@
 // Hint: Set N - number of simulations low until you have it working
 //       Then set it much much higher, and run in release mode so its faster
 
+
+//Helped by Sarah***** I think she was helped by others as well. May be pretty similar
+//Cited: http://www.datagenetics.com/blog/november12011/
+
 int main() {
 
 	SetTransitionMatrix();
@@ -30,12 +34,18 @@ int main() {
 	std::vector<int> discreteMC;
 	for (unsigned int i = 0; i < N; ++i) {
 		
-		//TODO (add DTMC, and histogram lines.)
+		//TODO 
+		discreteMC = DTMC(TransitionMatrix, 10, start);
 
-		// Code if you wanted to print out results at each step
-		//for (auto elem : discreteMC)
-		//	std::cout << elem << std::endl;
+		++hist[std::round(discreteMC.back())];
 
+		for (auto elem : discreteMC) {
+
+			std::cout << elem << ", ";
+			myfile << elem << ", ";
+		}
+		std::cout << std::endl;
+		myfile << std::endl;
 	}
 	//Returns an array discreteMC with the states at each step of the discrete-time Markov Chain
 	//The number of transitions is given by steps. The initial state is given by start 
