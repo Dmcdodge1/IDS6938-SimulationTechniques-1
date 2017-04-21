@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿#Homework 2 :  Discrete-Event Simulation Assignment
+=======
+# Homework 2 :  Discrete-Event Simulation Assignment
+>>>>>>> upstream/master
 
 ## IDS6938-Simulation Techniques - [University of Central Florida](http://www.ist.ucf.edu/grad/)
 
@@ -6,11 +10,14 @@
  
 The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
+<<<<<<< HEAD
 # Devyn Dodge 
 
 # Part 1: Empirical Tests of Randomness (20 pts)
 
 * **(a) - 3pts: Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
+=======
+>>>>>>> upstream/master
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/all.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/Variance.PNG)
@@ -27,6 +34,12 @@ The assignment is due: **Tuesday, March 28 at 11:59PM (EST)**
 
 When changing the N to a much higher number, patterns were substantially clearer compared to the lower Ns. Because this is "random" I ran this experiment a few times and obtained fluctuating results. Means, ranges, variances, Chi scores, Standard deviations, etc. all fluctuated lower and higher than the very large data set of 100,000. For the most part though, the variances of the smaller data sets were larger as well as the standard deviations, but once again this is "random," so it can be flipped around if I were to run it again.
 
+<<<<<<< HEAD
+=======
+# Assignment
+## Part 0 - Getting Started
+Read the assignment. Sync your fork with the [main IDS6938 repository](https://github.com/hepcatjk/IDS6938-SimulationTechniques). Use CMake to create project files for the Homework 2 assignment (*Hint: and Discrete Lecture folders*). Set your *startup project* to the correct project. Test building and executing the homework 2 project. Look over and understand the framework and find the functions you need to edit for the assignment.
+>>>>>>> upstream/master
 
 * **(c)- 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
 
@@ -34,10 +47,22 @@ I chose the minstd_rand engine.
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/partc.PNG)
 
+<<<<<<< HEAD
+=======
+## Part 1: Empirical Tests of Randomness (20 pts).
+We looked at different ways to generate [pseudo-random numbers](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) and [quasi random numbers](https://en.wikipedia.org/wiki/Low-discrepancy_sequence). Generating random numbers are crucial to Discrete-Event simulations which rely on random variables and stochastic processes. This problem explores different random number generators, distributions, and statistics. Different [C++ pseudo-random numbers engines are instantiated](http://www.cplusplus.com/reference/random/) already for you. Also a a wide variety of standard distributions are implemented. Two quasi random number generators are also provided. - One must be the Sobel - quasi random number generator.
+* **(a) - 3pts:** Output the results of five different random number engines, using a uniform distribution for values between [0-100]. Generate useful charts and statistics from the output to analyze how uniform these values truly are. You are expected to look at some advanced statistics and test, for example: tests like the Kolmogorov-Smirnov test, Chi-square test, Autocorrelation test, and Spearman’s Rank Correlation Coefficient are a few examples of ones your could use.)
+* **(b) - 2pts:**  Vary *N* (amount of samples). How do things change.
+* **(c) - 3pts:** Fix a random engine of your choice from part (a), and now vary five different [distributions](http://www.cplusplus.com/reference/random/) for just the psedo-random numbers. Again, analyze your results with graphs and statistics of choice.
+>>>>>>> upstream/master
 * **(d)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different random number engines. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines.
 * **(e)- 4pts:** Generate random numbers in two-dimensions for a unit square. Plot the results for the different distributions. The vertical axis should vary N in increasing order. The horizontal axis should show of the random number engines. (See [Random Numbers Webcourse page](https://webcourses.ucf.edu/courses/1246518/pages/random-numbers?module_item_id=10541423) for a rough idea what you should produce.)
 
+<<<<<<< HEAD
 Parts D and E are below.
+=======
+## Part 2 - Snakes and Ladders (Discrete Event Markov Chains and Monte Carlo Simulations) (30 pts)
+>>>>>>> upstream/master
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework2/images/partde.PNG)
 
@@ -92,7 +117,11 @@ Run the same simulation and analyze your results similar to part (b) for the pro
 * **(d) Think - 0pts:** If these games are built entirely on chance, do they require any strategy? Is it really a *game*, would you rather play games of chance or games of strategy?
 
 
+<<<<<<< HEAD
 # Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
+=======
+## Part 3 - Discrete Event Simulation - Queue Simulation (30 pts)
+>>>>>>> upstream/master
 
 I have a working example in my folders. Here are some pictures of it working.
 
@@ -107,6 +136,7 @@ Anylogic folder also uploaded.
 
 # Part 4 - Implementing Extra Features (10 pts)
 
+<<<<<<< HEAD
 Implementing 2 features on the extra features list. Pick any feature on the "*extra features*" list below to customize your assignment to fit your interests. Please document this in your writeup. (*Note: These should total 10pts. You could successfully implement a feature worth 10pts or greater. This also fulfills this requirement. The features are assigned points based on difficulty. The 5pt features are more straightforward.*)
 
 For another class I am doing research on how different assembly lines alter total output and I thought this would be a great addition. I can improve upon this and even create different layouts!
@@ -121,10 +151,17 @@ Anylogic folder also uploaded.
 Write up the results to the previous sections in the main readme.md in your forked repository. Turn in the URL for your fork in webcourses. Be visual. The report should contain the graphs and analysis requested. I have high expectations for the documentation here and you should allot the proper time to compose the writeup.
 
 Completed! 
+=======
+## Part 4 - Implementing Extra Features (10 pts)
+Implementing 2 features on the extra features list. Pick any feature on the "*extra features*" list below to customize your assignment to fit your interests. Please document this in your writeup. (*Note: These should total 10pts. You could successfully implement a feature worth 10pts or greater. This also fulfills this requirement. The features are assigned points based on difficulty. The 5pt features are more straightforward.*)
+
+## Part 5 - Final Report (10 pts)
+Write up the results to the previous sections in the main *readme.md* in your forked repository. Turn in the URL for your fork in webcourses. Be visual. The report should contain the graphs and analysis requested. I have high expectations for the documentation here and you should allot the proper time to compose the writeup.
+>>>>>>> upstream/master
 
 An attempted (10 Points) - Add a 2D visualization to AnyLogic for Part 3
 
-##Extra Features (Extra Credit - 25pts)
+## Extra Features (Extra Credit - 25pts)
 You have to implement two features from this list for Part 4. You may choose any two features you wish from this list. (Please explicitly note them in your *Readme.md*)
 
 If you feel like going beyond the scope of the assignment, you should consider implementing more of the following extra features. *Get the assignment working without them first.* You can get a maximum of 25 points in extra credit. Simply implementing these things doesn't guarantee you a 25; you really need to go above and beyond to get the full amount. (*The instructor reserves the right to hand out extra credit as his he sees fit.*)

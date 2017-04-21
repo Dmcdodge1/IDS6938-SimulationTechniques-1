@@ -29,6 +29,7 @@ bool isRecording = false;
 
 void initCamera()
 {
+<<<<<<< HEAD
 	double w = theJello.GetWidth() * 2;
 	double h = theJello.GetHeight() * 2;
 	double d = theJello.GetDepth() * 2;
@@ -39,6 +40,18 @@ void initCamera()
 	theCamera.dfltEye.set(w*0.5, h, -(dist + d));
 	theCamera.dfltLook.set(0.0, 0.0, 0.0);
 	theCamera.reset();
+=======
+	double w = 5; 
+	double h = 5; 
+	double d = 5; 
+   double angle = 0.5*theCamera.dfltVfov*M_PI/180.0;
+   double dist;
+   if (w > h) dist = w*0.5/tan(angle);  // aspect is 1, so i can do this
+   else dist = h*0.5/tan(angle);
+   theCamera.dfltEye.set(w*0.5, h, -(dist+d));
+   theCamera.dfltLook.set(0.0, 0.0, 0.0);
+   theCamera.reset();
+>>>>>>> upstream/master
 }
 
 void grabScreen()
@@ -128,6 +141,7 @@ void onMouseCb(int button, int state, int x, int y)
 
 void onKeyboardCb(unsigned char key, int x, int y)
 {
+<<<<<<< HEAD
 	unsigned int mask = 0x0;
 
 	if (key == ' ') theCamera.reset();
@@ -159,6 +173,36 @@ void onKeyboardCb(unsigned char key, int x, int y)
 	}
 
 	glutPostRedisplay();
+=======
+   unsigned int mask = 0x0;
+
+   if (key == ' ') theCamera.reset();
+   else if (key == 27) exit(0); // ESC Key
+   else if (key == '8') theJello.SetIntegrationType(JelloMesh::EULER);
+   else if (key == '9') theJello.SetIntegrationType(JelloMesh::MIDPOINT);
+   else if (key == '0') theJello.SetIntegrationType(JelloMesh::RK4);
+   else if (key == '>') isRunning = true;
+   else if (key == '=') isRunning = false;
+   else if (key == '<') theJello.Reset();
+   else if (key == 'r') isRecording = !isRecording; if (isRecording) theFrameNum = 0;
+   else if (key == '1') mask = theJello.MESH;
+   else if (key == '2') mask = theJello.FORCES;
+   else if (key == '3') mask = theJello.NORMALS;
+
+   if (mask)
+   {
+       if (theJello.GetDrawFlags() & mask)
+       {
+           theJello.SetDrawFlags(theJello.GetDrawFlags() & ~mask);
+       }
+       else
+       {
+           theJello.SetDrawFlags(theJello.GetDrawFlags() | mask);
+       }
+   }
+
+   glutPostRedisplay();
+>>>>>>> upstream/master
 }
 
 void onMenuCb(int value)

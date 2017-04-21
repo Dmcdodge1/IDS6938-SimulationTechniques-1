@@ -23,6 +23,7 @@ public:
 	// Reset to the initial state
 	virtual void Reset();
 
+<<<<<<< HEAD
 	// Set/Get our JelloMesh resolution
 	virtual void SetGridSize(int cols, int rows, int stacks);
 	virtual int GetGridCols() const;
@@ -34,6 +35,14 @@ public:
 	virtual float GetWidth() const;
 	virtual float GetHeight() const;
 	virtual float GetDepth() const;
+=======
+    // Set/Get our JelloMesh resolution
+
+
+    // Set/Get our JelloMesh size (in world coordinates)
+    virtual void SetSize(float width, float height, float depth);
+
+>>>>>>> upstream/master
 
 	// Set/Get our numerical integration type
 	enum IntegrationType { EULER, MIDPOINT, RK4 };
@@ -44,8 +53,11 @@ public:
 	virtual void SetDrawFlags(unsigned int flags);
 	virtual unsigned int GetDrawFlags() const;
 
+<<<<<<< HEAD
 	// Spring types
 	enum SpringType { STRUCTURAL = 0x1, SHEAR = 0x2, BEND = 0x4 };
+=======
+>>>>>>> upstream/master
 
 	int GetIndex(int i, int j, int k) const;
 	void GetCell(int idx, int& i, int &j, int &k) const;
@@ -53,10 +65,16 @@ public:
 
 protected:
 
+<<<<<<< HEAD
 	class Particle;
 	class Spring;
 	friend class FaceMesh;
 	friend class TestJelloMesh;
+=======
+    class Particle;
+
+    friend class TestJelloMesh;
+>>>>>>> upstream/master
 
 	typedef std::vector<std::vector<std::vector<Particle>>> ParticleGrid;
 	Particle& GetParticle(ParticleGrid& grid, int i, int j, int k);
@@ -64,6 +82,7 @@ protected:
 	const Particle& GetParticle(const ParticleGrid& grid, int i, int j, int k) const;
 	const Particle& GetParticle(const ParticleGrid& grid, int idx) const;
 
+<<<<<<< HEAD
 	bool isInterior(const Spring& s) const;
 	bool isInterior(int idx) const;
 	bool isInterior(int i, int j, int k) const;
@@ -72,6 +91,14 @@ protected:
 	virtual void AddStructuralSpring(Particle& p1, Particle& p2);
 	virtual void AddBendSpring(Particle& p1, Particle& p2);
 	virtual void AddShearSpring(Particle& p1, Particle& p2);
+=======
+
+    bool isInterior(int idx) const;
+    bool isInterior(int i, int j, int k) const;
+
+    virtual void InitJelloMesh();
+
+>>>>>>> upstream/master
 
 	class Intersection;
 	virtual void CheckForCollisions(ParticleGrid& grid, const World& world);
@@ -86,6 +113,7 @@ protected:
 	virtual void MidPointIntegrate(double dt);
 	virtual void RK4Integrate(double dt);
 
+<<<<<<< HEAD
 	enum Face { XLEFT, XRIGHT, YTOP, YBOTTOM, ZFRONT, ZBACK };
 	class FaceMesh
 	{
@@ -106,6 +134,14 @@ protected:
 	void DrawSprings(double a);
 	void DrawCollisionNormals();
 	void DrawForces();
+=======
+	virtual void DrawParticles();
+
+
+
+    void DrawCollisionNormals();
+    void DrawForces();
+>>>>>>> upstream/master
 
 protected:
 
@@ -114,6 +150,7 @@ protected:
 	unsigned int m_drawflags;
 	vec3 m_externalForces;
 
+<<<<<<< HEAD
 	IntegrationType m_integrationType;
 	std::vector<FaceMesh> m_mesh;
 	ParticleGrid m_vparticles;
@@ -189,6 +226,61 @@ protected:
 		double m_distance;
 		IntersectionType m_type;
 	};
+=======
+    IntegrationType m_integrationType;
+
+    ParticleGrid m_vparticles;
+
+
+    std::vector<Intersection> m_vcontacts;
+    std::vector<Intersection> m_vcollisions;
+
+public:
+
+
+    static double g_penaltyKs;
+    static double g_penaltyKd;
+
+    static const unsigned int MESH = 0x10;
+    static const unsigned int NORMALS = 0x100;
+    static const unsigned int FORCES = 0x1000;
+
+protected:
+
+    class Particle
+    {
+    public:
+        Particle();
+        Particle(const Particle& p);
+        Particle& operator=(const Particle& p);
+        Particle(int idx, const vec3& pos, const vec3& vel = vec3(0,0,0), double m = 1);
+
+        int index;
+        vec3 position;
+        vec3 velocity;
+        vec3 force;
+        double mass;
+
+        static Particle EMPTY;
+    };
+
+    
+
+    enum IntersectionType { CONTACT, COLLISION };
+    class Intersection
+    {
+    public:
+        Intersection();
+        Intersection(const Intersection& p);
+        Intersection& operator=(const Intersection& p);
+        Intersection(IntersectionType type, int p, const vec3& normal, double d = 0);
+
+        int m_p;
+        vec3 m_normal;
+        double m_distance;
+        IntersectionType m_type;
+    };
+>>>>>>> upstream/master
 };
 
 #endif
