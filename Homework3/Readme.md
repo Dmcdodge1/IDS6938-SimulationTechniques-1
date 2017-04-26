@@ -22,22 +22,30 @@ You will need to set deriv[0], deriv[1], deriv[2], deriv[3]. Compute derivative 
 * deriv[2] is the force in local body coordinates divided by the mass.
 * deriv[3] is the torque in local body coordinates divided by the inertia.
 
+--------------------------------------------------------------------------------------------------------
+
 **Answer for Part 1 A: From lines 272-275 in my Agent.cpp file are the derivatives.**
 
-	**deriv[0] = state[2];**
+**deriv[0] = state[2];**
 
-	**deriv[1] = state[3];**
+**deriv[1] = state[3];**
 
-	**deriv[2] = input[0] / Mass;**
+**deriv[2] = input[0] / Mass;**
 
-	**deriv[3] = input[1] / Inertia;**
+**deriv[3] = input[1] / Inertia;**
+
+---------------------------------------------------------------------------------------------------------
 
 You also must implement *SIMAgent::InitValues()*: Try to figure out appropriate values for control and behavior settings. You need to find out appropriate values for: *SIMAgent::Kv0, SIMAgent::Kp1, SIMAgent::Kv1, SIMAgent::KArrival, SIMAgent::KDeparture,
 SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood, SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.*
 
-	**Below is a snapshot of my values used for the simulation.**
+----------------------------------------------------------------------------------------------------------
 
-	![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Values.PNG)
+**Below is a snapshot of my values used for the simulation.**
+
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Values.PNG)
+
+-----------------------------------------------------------------------------------------------------------
 
 **(b) - 20 points**: In this part of the assignment you will need to implement 6 types of individual behaviors and 5 types of group behaviors. Create the following behaviors through appropriate computation of V<sub> d</sub>  and θ<sub>d</sub>  commands:
 * Seek
