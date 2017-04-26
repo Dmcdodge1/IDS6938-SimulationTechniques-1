@@ -23,6 +23,7 @@ You will need to set deriv[0], deriv[1], deriv[2], deriv[3]. Compute derivative 
 * deriv[3] is the torque in local body coordinates divided by the inertia.
 
 **From lines 272-275 in my Agent.cpp file are the derivatives.**
+
 **deriv[0] = state[2];**
 **deriv[1] = state[3];**
 **deriv[2] = input[0] / Mass;**
@@ -32,7 +33,7 @@ You also must implement *SIMAgent::InitValues()*: Try to figure out appropriate 
 SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood, SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.*
 
 **Below is a snapshot of my values used for the simulation.**
-![](images/Values.png?raw=true)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Values.PNG)
 
 **(b) - 20 points**: In this part of the assignment you will need to implement 6 types of individual behaviors and 5 types of group behaviors. Create the following behaviors through appropriate computation of V<sub> d</sub>  and θ<sub>d</sub>  commands:
 * Seek
