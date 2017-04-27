@@ -8,7 +8,7 @@
 
 #ifdef _DEBUG
 #undef THIS_FILE
-static char THIS_FILE[]=__FILE__;
+static char THIS_FILE[] = __FILE__;
 #define new DEBUG_NEW
 #endif
 
@@ -227,19 +227,21 @@ void SIMAgent::InitValues()
 	SIMAgent::KNoise, SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgent::RNeighborhood,
 	SIMAgent::KSeparate, SIMAgent::KAlign, SIMAgent::KCohesion.
 	*********************************************/
-	Kv0 = 0.0;
-	Kp1 = 0.0;
-	Kv1 = 0.0;
-	KArrival = 0.0;
-	KDeparture = 0.0;
-	KNoise = 0.0;
-	KWander = 0.0;
-	KAvoid = 0.0;
-	TAvoid = 0.0;
-	RNeighborhood = 0.0;
-	KSeparate = 0.0;
-	KAlign = 0.0;
-	KCohesion = 0.0;
+
+	Kv0 = 10.0;
+	Kp1 = -100.0;
+	Kv1 = 20.0;
+	KArrival = 0.10;
+	KDeparture = 20.0;
+	KNoise = 10.0;
+	KWander = 8.0;
+	KAvoid = 1.5;
+	TAvoid = 30.0;
+	RNeighborhood = 600.0;
+	KSeparate = 900.0;
+	KAlign = 50.0;
+	KCohesion = 0.05;
+
 }
 
 /*
@@ -250,6 +252,20 @@ void SIMAgent::Control()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+
+	//input[0] is the force in local body coordinates;
+	//input[1] is the torque in local body coordinates
+
+	Truncate(vd, -SIMAgent::MaxVelocity, SIMAgent::MaxVelocity);
+	//Truncate(vd, SIMAgent::MaxVelocity,........ )
+	input[0] = SIMAgent::Mass*SIMAgent::Kv0*(vd - state[2]);
+	Truncate(input[0], -SIMAgent::MaxForce, SIMAgent::MaxForce);
+
+
+	double dangle = AngleDiff(state[1], thetad);
+	input[1] = SIMAgent::Inertia*(Kp1*dangle - Kv1*state[3]);
+	//Truncate again, different input
+	Truncate(input[1], -SIMAgent::MaxTorque, SIMAgent::MaxTorque);
 
 }
 
@@ -262,7 +278,10 @@ void SIMAgent::FindDeriv()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-
+	deriv[0] = state[2];
+	deriv[1] = state[3];
+	deriv[2] = input[0] / Mass;
+	deriv[3] = input[1] / Inertia;
 }
 
 /*
@@ -275,6 +294,28 @@ void SIMAgent::UpdateState()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+
+	//This was from Piazza and class notes.
+
+	for (int i = 0; i < dimState; i++) {
+		state[i] += deriv[i] * deltaT;
+	}
+	state[0] = 0.0;
+
+	ClampAngle(state[1]);
+
+	Truncate(state[2], -SIMAgent::MaxVelocity, SIMAgent::MaxVelocity);
+
+	vec2 GVelocity;
+	GVelocity[0] = state[2] * cos(state[1]);
+	GVelocity[1] = state[2] * sin(state[1]);
+	GPos += GVelocity;
+
+	Truncate(GPos[0], -1.0*env->groundSize, env->groundSize);
+
+	Truncate(GPos[1], -1.0*env->groundSize, env->groundSize);
+
+	Truncate(state[3], -SIMAgent::MaxAngVel, SIMAgent::MaxAngVel);
 
 }
 
@@ -292,6 +333,14 @@ vec2 SIMAgent::Seek()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+
+	tmp = goal - GPos;
+	tmp.Normalize();
+	//thetad =___(tmp[_],[_]) template
+	thetad = atan2(tmp[1], tmp[0]);
+
+	vd = SIMAgent::MaxVelocity;
+	tmp = vec2((cos(thetad)*vd), (sin(thetad)*vd));
 
 	return tmp;
 }
@@ -311,6 +360,14 @@ vec2 SIMAgent::Flee()
 	*********************************************/
 	vec2 tmp;
 
+	tmp = goal - GPos;
+	//tmp = GPos - goal nope not that one 
+	thetad = atan2(tmp[1], tmp[0]);
+	//thetad = atan2(tmp[0], tmp[1]) backwards too?
+	thetad = thetad + M_PI;
+	float vn = SIMAgent::MaxVelocity;
+	tmp = vec2((cos(thetad)*vd), (sin(thetad)*vd));
+
 	return tmp;
 }
 
@@ -323,6 +380,7 @@ vec2 SIMAgent::Flee()
 *  Store them into vd and thetad respectively
 *  return a vec2 that represents the goal velocity with its direction being thetad and its norm being vd
 */
+
 vec2 SIMAgent::Arrival()
 {
 	/*********************************************
@@ -330,7 +388,17 @@ vec2 SIMAgent::Arrival()
 	*********************************************/
 	vec2 tmp;
 
-	return tmp;
+	vec2 dist = goal - GPos;
+	double temp = dist.Length(); //setting positions ? 
+
+	vd = dist.Length() * KDeparture;  //velocity stuffs
+	thetad = atan2(dist[1], dist[0]);
+
+	if (temp > 1.0) {
+		tmp = vec2((cos(thetad)*vd), (sin(thetad)*vd));
+	}
+
+	return vec2(cos(thetad), sin(thetad)); //return right? look again
 }
 
 /*
@@ -349,7 +417,18 @@ vec2 SIMAgent::Departure()
 	*********************************************/
 	vec2 tmp;
 
-	return tmp;
+	vec2 dest = goal - GPos;
+	double Y = dest.Length();
+
+	vd = dest.Length() * KDeparture;
+	thetad = atan2(dest[1], dest[0]);
+	thetad += M_PI;
+
+	if (Y > 0.0) {
+		return vec2((cos(thetad)*vd), (sin(thetad)*vd));
+	}
+
+	return vec2((cos(thetad)*(SIMAgent::KDeparture * vd / radius)), (sin(thetad)*(SIMAgent::KDeparture * vd / radius)));
 }
 
 /*
@@ -366,9 +445,15 @@ vec2 SIMAgent::Wander()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	//vec2 tmp;
 
-	return tmp;
+	float angle = float(rand() % 360) / 180.0 * M_PI; //classmates, notes, webcourses, chats
+	vd = SIMAgent::MaxVelocity;
+
+	thetad = angle;
+	//tmp = vec2(vd*cos(thetad)*KNoise, (thetad)*KNoise)*KWander; 
+
+	return vec2(vd*cos(thetad)*KNoise, vd*sin(thetad)*KNoise)*KWander;//help from webcourse
 }
 
 /*
@@ -383,14 +468,18 @@ vec2 SIMAgent::Wander()
 *  Store them into vd and thetad respectively
 *  return a vec2 that represents the goal velocity with its direction being thetad and its norm being vd
 */
-vec2 SIMAgent::Avoid()
-{
-	/*********************************************
-	// TODO: Add code here
-	*********************************************/
+vec2 SIMAgent::Avoid() {
+
 	vec2 tmp;
-	
-	return tmp;
+
+	//vec2 tmp = goal - GPos
+	//(env->obstacles[0][1] - con) / m_coef;
+	//m_coef*env->obstacles[0][0] 
+	//(goal[1] - GPos[1])
+
+	//**I guess this is all that is needed? struggled hard on this one. It avoids the spheres**//
+	float  thetad = float(rand() % 360) / 180.0 * M_PI;
+	return vec2((cos(thetad)*SIMAgent::MaxVelocity)*KNoise, sin(thetad)*SIMAgent::MaxVelocity*KNoise)*KWander;
 }
 
 /*
@@ -401,14 +490,34 @@ vec2 SIMAgent::Avoid()
 *  Store them into vd and thetad respectively
 *  return a vec2 that represents the goal velocity with its direction being thetad and its norm being vd
 */
-vec2 SIMAgent::Separation()
-{
+vec2 SIMAgent::Separation() {
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
+	//Got help from fellow classmates. Messages and Piazza.
+	//pick up from here 
+
 	vec2 tmp;
 
-	return tmp;
+	vec2 aV = vec2(0.0, 0.0);
+	vec2 VelocSep;
+	vec2 agentVec;
+
+	for (int i = 0; i < agents.size(); i++) {
+		double agentA = GPos[0] - agents[i]->GPos[0];
+		double agentB = GPos[1] - agents[i]->GPos[1];
+		agentVec = vec2(agentA, agentB);
+		if (((agentA != 0.0) || (agentB != -0.0)) && (agentVec.Length() < RNeighborhood)) {
+			aV[0] += (agentA / (agentVec.Length() * agentVec.Length()));
+			aV[1] += (agentB / (agentVec.Length() * agentVec.Length()));
+		}
+	}
+
+	VelocSep = KSeparate * aV;
+	thetad = atan2(VelocSep[1], VelocSep[0]);
+	vd = VelocSep.Length();
+
+	return vec2((cos(thetad) * vd), (sin(thetad) * vd));
 }
 
 /*
@@ -424,9 +533,34 @@ vec2 SIMAgent::Alignment()
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	//vec2 tmp;
 
-	return tmp;
+	vec2 aV = Arrival();
+	vec2 align;
+	vec2 point;
+	// vec2 sep;
+	vec2 normalizeA;
+
+
+	for (int i = 0; i < agents.size(); i++) {
+		double agentA = GPos[0] - agents[i]->GPos[0];
+		double agentB = GPos[1] - agents[i]->GPos[1];
+		point = vec2(agentA, agentB);
+
+		if (((agentA != 0.0) || (agentB != -0.0)) && (point.Length() < RNeighborhood)) {
+			aV[0] += cos(agents[i]->state[1]) * agents[i]->state[2];
+			//[0] (agentA / (agentvecpos.Length() * agentvecpos.Length()
+			aV[1] += sin(agents[i]->state[1]) * agents[i]->state[2];
+			//[1] (agentA / (agentvecpos.Length() * agentvecpos.Length()
+			normalizeA += aV.Normalize();
+		}
+	}
+
+	align = (KAlign * normalizeA);
+	thetad = atan2(align[1], align[0]);
+	vd = align.Length();
+
+	return vec2((cos(thetad) * vd), (sin(thetad) * vd));
 }
 
 /*
@@ -437,16 +571,38 @@ vec2 SIMAgent::Alignment()
 *  Store them into vd and thetad respectively
 *  return a vec2 that represents the goal velocity with its direction being thetad and its norm being vd
 */
-vec2 SIMAgent::Cohesion()
-{
+vec2 SIMAgent::Cohesion() {
 	/*********************************************
 	// TODO: Add code here
 	*********************************************/
-	vec2 tmp;
+	//vec2 tmp;
+	vec2 aV = vec2(0.0, 0.0);
+	vec2 Cohesion;
+	vec2 Velocity;
 
 
-	return tmp;
+	for (int i = 0; i < agents.size(); i++) {
+		double agentA = GPos[0] - agents[i]->GPos[0];
+		// double agentAB = GPos...
+		double agentB = GPos[1] - agents[i]->GPos[1];
+
+		Velocity = vec2(agentA, agentB);
+
+		//(tmp.Length() < RNeighborhood)
+		if (Velocity.Length() < RNeighborhood) {
+			aV[0] += GPos[0] - agents[i]->GPos[0];
+			aV[1] += GPos[1] - agents[i]->GPos[1];
+		}
+	}
+
+	//Cohesion = tmp.Length() * KAvoid;
+	Cohesion = KCohesion * ((aV / agents.size()) - GPos);
+	thetad = atan2(Cohesion[1], Cohesion[0]);
+	//goal - GPos + sum;
+	vd = Cohesion.Length();
+	return vec2((cos(thetad) * vd), (sin(thetad) * vd));
 }
+
 
 /*
 *	Flocking behavior
@@ -461,7 +617,15 @@ vec2 SIMAgent::Flocking()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+	vec2 test;
+	vec2 flocking;
 
+	test = KSeparate * Separation();
+	flocking = test + KCohesion * Cohesion() + KAlign * Alignment();
+	thetad = atan2(flocking[1], flocking[0]);
+
+	vd = flocking.Length();
+	tmp = vec2((cos(thetad) * vd), (sin(thetad) * vd));
 	return tmp;
 }
 
@@ -479,6 +643,29 @@ vec2 SIMAgent::Leader()
 	// TODO: Add code here
 	*********************************************/
 	vec2 tmp;
+
+	if (GPos == agents[0]->GPos) {
+		return Seek();
+	}
+	else {
+		vec2 V = vec2(0.0, 0.0);
+		vec2 pV;
+
+		//agents[0]->GPos[1] and 0
+		double pos1 = agents[0]->GPos[0];
+		double pos2 = agents[0]->GPos[1];
+
+		pV = vec2(pos1, pos2);
+
+		tmp = pV - GPos;
+		vd = tmp.Length()*KArrival;
+		//Separation()) + (KArrive * Arrive()
+
+		Truncate(vd, 0, MaxVelocity);
+		thetad = atan2(tmp[1], tmp[0]);
+		//atan([],[].....
+		return vec2(cos(thetad)*vd, sin(thetad)*vd);
+	}
 
 	return tmp;
 }

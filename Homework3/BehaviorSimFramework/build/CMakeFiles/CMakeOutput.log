@@ -1,4 +1,4 @@
-The system is: Windows - 10.0.14393 - AMD64
+The system is: Windows - 10.0.15063 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
 Build flags: 
@@ -9,7 +9,7 @@ The output was:
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:43 PM.
+Build started 4/25/2017 9:09:19 PM.
 Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\3.7.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -35,7 +35,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:05.79
+Time Elapsed 00:00:05.30
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -54,7 +54,7 @@ The output was:
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:49 PM.
+Build started 4/25/2017 9:09:25 PM.
 Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\3.7.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
@@ -80,7 +80,7 @@ Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.81
+Time Elapsed 00:00:01.22
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -92,33 +92,71 @@ The CXX compiler identification is MSVC, found in "C:/Users/Devyn/Desktop/Homewo
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3c505.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5086c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:51 PM.
-Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_3c505.vcxproj" on node 1 (default targets).
+Build started 4/25/2017 9:09:27 PM.
+Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_5086c.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_3c505.dir\Debug\".
+  Creating directory "cmTC_5086c.dir\Debug\".
   Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_3c505.dir\Debug\cmTC_3c505.tlog\".
+  Creating directory "cmTC_5086c.dir\Debug\cmTC_5086c.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_3c505.dir\Debug\cmTC_3c505.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_5086c.dir\Debug\cmTC_5086c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c505.dir\Debug\\" /Fd"cmTC_3c505.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5086c.dir\Debug\\" /Fd"cmTC_5086c.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCCompiler.c
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c505.dir\Debug\\" /Fd"cmTC_3c505.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5086c.dir\Debug\\" /Fd"cmTC_5086c.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCCompiler.c
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_3c505.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_3c505.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_3c505.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_3c505.dir\Debug\testCCompiler.obj
-  cmTC_3c505.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_3c505.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_5086c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_5086c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_5086c.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_5086c.dir\Debug\testCCompiler.obj
+  cmTC_5086c.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_5086c.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_3c505.dir\Debug\cmTC_3c505.tlog\unsuccessfulbuild".
-  Touching "cmTC_3c505.dir\Debug\cmTC_3c505.tlog\cmTC_3c505.lastbuildstate".
-Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_3c505.vcxproj" (default targets).
+  Deleting file "cmTC_5086c.dir\Debug\cmTC_5086c.tlog\unsuccessfulbuild".
+  Touching "cmTC_5086c.dir\Debug\cmTC_5086c.tlog\cmTC_5086c.lastbuildstate".
+Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_5086c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.51
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_63404.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25420.1
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 4/25/2017 9:09:29 PM.
+Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_63404.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_63404.dir\Debug\".
+  Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_63404.dir\Debug\cmTC_63404.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_63404.dir\Debug\cmTC_63404.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63404.dir\Debug\\" /Fd"cmTC_63404.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_63404.dir\Debug\\" /Fd"cmTC_63404.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_63404.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_63404.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_63404.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_63404.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_63404.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_63404.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_63404.dir\Debug\cmTC_63404.tlog\unsuccessfulbuild".
+  Touching "cmTC_63404.dir\Debug\cmTC_63404.tlog\cmTC_63404.lastbuildstate".
+Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_63404.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
@@ -127,118 +165,80 @@ Build succeeded.
 Time Elapsed 00:00:01.25
 
 
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_ee22f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
-Microsoft (R) Build Engine version 14.0.25420.1
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Build started 4/21/2017 4:24:52 PM.
-Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_ee22f.vcxproj" on node 1 (default targets).
-PrepareForBuild:
-  Creating directory "cmTC_ee22f.dir\Debug\".
-  Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_ee22f.dir\Debug\cmTC_ee22f.tlog\".
-InitializeBuildStatus:
-  Creating "cmTC_ee22f.dir\Debug\cmTC_ee22f.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
-ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee22f.dir\Debug\\" /Fd"cmTC_ee22f.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  
-  CMakeCCompilerABI.c
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee22f.dir\Debug\\" /Fd"cmTC_ee22f.dir\Debug\vc140.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
-  
-Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_ee22f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_ee22f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_ee22f.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ee22f.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_ee22f.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_ee22f.exe
-FinalizeBuildStatus:
-  Deleting file "cmTC_ee22f.dir\Debug\cmTC_ee22f.tlog\unsuccessfulbuild".
-  Touching "cmTC_ee22f.dir\Debug\cmTC_ee22f.tlog\cmTC_ee22f.lastbuildstate".
-Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_ee22f.vcxproj" (default targets).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:00.59
-
-
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_52141.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_43013.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:53 PM.
-Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_52141.vcxproj" on node 1 (default targets).
+Build started 4/25/2017 9:09:30 PM.
+Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_43013.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_52141.dir\Debug\".
+  Creating directory "cmTC_43013.dir\Debug\".
   Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_52141.dir\Debug\cmTC_52141.tlog\".
+  Creating directory "cmTC_43013.dir\Debug\cmTC_43013.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_52141.dir\Debug\cmTC_52141.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_43013.dir\Debug\cmTC_43013.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_52141.dir\Debug\\" /Fd"cmTC_52141.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_43013.dir\Debug\\" /Fd"cmTC_43013.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_52141.dir\Debug\\" /Fd"cmTC_52141.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_43013.dir\Debug\\" /Fd"cmTC_43013.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_52141.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_52141.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_52141.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_52141.dir\Debug\testCXXCompiler.obj
-  cmTC_52141.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_52141.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_43013.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_43013.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_43013.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_43013.dir\Debug\testCXXCompiler.obj
+  cmTC_43013.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_43013.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_52141.dir\Debug\cmTC_52141.tlog\unsuccessfulbuild".
-  Touching "cmTC_52141.dir\Debug\cmTC_52141.tlog\cmTC_52141.lastbuildstate".
-Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_52141.vcxproj" (default targets).
+  Deleting file "cmTC_43013.dir\Debug\cmTC_43013.tlog\unsuccessfulbuild".
+  Touching "cmTC_43013.dir\Debug\cmTC_43013.tlog\cmTC_43013.lastbuildstate".
+Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_43013.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.62
+Time Elapsed 00:00:01.07
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_6aa52.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b6838.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:54 PM.
-Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_6aa52.vcxproj" on node 1 (default targets).
+Build started 4/25/2017 9:09:32 PM.
+Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_b6838.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_6aa52.dir\Debug\".
+  Creating directory "cmTC_b6838.dir\Debug\".
   Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_6aa52.dir\Debug\cmTC_6aa52.tlog\".
+  Creating directory "cmTC_b6838.dir\Debug\cmTC_b6838.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_6aa52.dir\Debug\cmTC_6aa52.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_b6838.dir\Debug\cmTC_b6838.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6aa52.dir\Debug\\" /Fd"cmTC_6aa52.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b6838.dir\Debug\\" /Fd"cmTC_b6838.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6aa52.dir\Debug\\" /Fd"cmTC_6aa52.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b6838.dir\Debug\\" /Fd"cmTC_b6838.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files (x86)\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_6aa52.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_6aa52.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_6aa52.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6aa52.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_6aa52.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_6aa52.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_b6838.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_b6838.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_b6838.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b6838.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_b6838.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_b6838.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_6aa52.dir\Debug\cmTC_6aa52.tlog\unsuccessfulbuild".
-  Touching "cmTC_6aa52.dir\Debug\cmTC_6aa52.tlog\cmTC_6aa52.lastbuildstate".
-Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_6aa52.vcxproj" (default targets).
+  Deleting file "cmTC_b6838.dir\Debug\cmTC_b6838.tlog\unsuccessfulbuild".
+  Touching "cmTC_b6838.dir\Debug\cmTC_b6838.tlog\cmTC_b6838.lastbuildstate".
+Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_b6838.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:01.19
 
 
 
@@ -246,39 +246,39 @@ Time Elapsed 00:00:00.76
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_6eba6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_faf63.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25420.1
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 4/21/2017 4:24:55 PM.
-Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_6eba6.vcxproj" on node 1 (default targets).
+Build started 4/25/2017 9:09:34 PM.
+Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_faf63.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_6eba6.dir\Debug\".
+  Creating directory "cmTC_faf63.dir\Debug\".
   Creating directory "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_6eba6.dir\Debug\cmTC_6eba6.tlog\".
+  Creating directory "cmTC_faf63.dir\Debug\cmTC_faf63.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_6eba6.dir\Debug\cmTC_6eba6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_faf63.dir\Debug\cmTC_faf63.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6eba6.dir\Debug\\" /Fd"cmTC_6eba6.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\feature_tests.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_faf63.dir\Debug\\" /Fd"cmTC_faf63.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\feature_tests.cxx
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6eba6.dir\Debug\\" /Fd"cmTC_6eba6.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_faf63.dir\Debug\\" /Fd"cmTC_faf63.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:queue C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\feature_tests.cxx
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_6eba6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_6eba6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_6eba6.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6eba6.dir\Debug\feature_tests.obj
-  cmTC_6eba6.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_6eba6.exe
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_faf63.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_faf63.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Devyn/Desktop/Homework3/BehaviorSimFramework/build/CMakeFiles/CMakeTmp/Debug/cmTC_faf63.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_faf63.dir\Debug\feature_tests.obj
+  cmTC_faf63.vcxproj -> C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\Debug\cmTC_faf63.exe
 FinalizeBuildStatus:
-  Deleting file "cmTC_6eba6.dir\Debug\cmTC_6eba6.tlog\unsuccessfulbuild".
-  Touching "cmTC_6eba6.dir\Debug\cmTC_6eba6.tlog\cmTC_6eba6.lastbuildstate".
-Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_6eba6.vcxproj" (default targets).
+  Deleting file "cmTC_faf63.dir\Debug\cmTC_faf63.tlog\unsuccessfulbuild".
+  Touching "cmTC_faf63.dir\Debug\cmTC_faf63.tlog\cmTC_faf63.lastbuildstate".
+Done Building Project "C:\Users\Devyn\Desktop\Homework3\BehaviorSimFramework\build\CMakeFiles\CMakeTmp\cmTC_faf63.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.63
+Time Elapsed 00:00:01.15
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

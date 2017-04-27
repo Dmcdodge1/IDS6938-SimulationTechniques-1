@@ -95,33 +95,34 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 
 **(c) - 20 points**: Implement the functions for the following group behaviors: 
 
-### Seperation
+### Separation
 
-
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Sep.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
 ### Cohesion 
 
-
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Cohesion.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
 ### Alignment 
 
-
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Align.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
 ### Flocking
 
-
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Flock.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-* Leader Following
 
+### Leader Following
 
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Leader.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
