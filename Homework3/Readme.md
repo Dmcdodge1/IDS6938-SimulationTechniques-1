@@ -98,6 +98,8 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 * Flocking
 * Leader Following
 
+Feel free to reference the code saved in the src or build folder. Here is a link to a Youtube video showing all the required functions. 
+
 # Part 2 - Simulating a simple pedestrian flow
 
 ![](images/flow.png?raw=true)
