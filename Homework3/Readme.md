@@ -2,6 +2,8 @@
 
 Due: Friday 4/28/2017 (three extra days saved during the semester and the one extra stated in class)
 
+Note: During this assignment, I had assistance from fellow classmates, utilized webcourses, notes, Piazza, and discussions.
+
 # Homework 3 : Agent based Simulation Assignment 
 
 ## IDS6938-Simulation Techniques - [University of Central Florida](http://www.ist.ucf.edu/grad/)
@@ -85,20 +87,48 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 
 ------------------------------------------------------------------------------------------------------------
 
-### Obstacle Avoidance*
+### Obstacle Avoidance
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Avoid.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
 **(c) - 20 points**: Implement the functions for the following group behaviors: 
-* Seperation
-* Cohesion 
-* Alignment 
-* Flocking
+
+### Seperation
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+### Cohesion 
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+### Alignment 
+
+
+
+------------------------------------------------------------------------------------------------------------
+
+### Flocking
+
+
+
+------------------------------------------------------------------------------------------------------------
+
 * Leader Following
 
-Feel free to reference the code saved in the src or build folder. Here is a link to a Youtube video showing all the required functions. 
+
+
+------------------------------------------------------------------------------------------------------------
+
+
+Note: Feel free to reference the code saved in the src or build folder. Here is a link to a Youtube video showing all the required functions. 
+
+------------------------------------------------------------------------------------------------------------
 
 # Part 2 - Simulating a simple pedestrian flow
 
