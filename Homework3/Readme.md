@@ -55,37 +55,37 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 
 ------------------------------------------------------------------------------------------------------------
 
-** Seek **
+### Seek 
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Seek.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-** Flee **
+### Flee 
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Flee.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-** Arrival **
+### Arrival 
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Arrival.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-** Departure **
+### Departure 
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Departure.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-** Wander **
+### Wander 
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Wander.PNG)
 
 ------------------------------------------------------------------------------------------------------------
 
-** Obstacle Avoidance **
+### Obstacle Avoidance*
 
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Avoid.PNG)
 
