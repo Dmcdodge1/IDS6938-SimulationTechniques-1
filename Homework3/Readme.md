@@ -127,7 +127,7 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 ------------------------------------------------------------------------------------------------------------
 
 
-Note: Feel free to reference the code saved in the src or build folder. Here is a link to a Youtube video showing all the required functions. 
+Note: Feel free to reference the code saved in the src or build folder. Here is a link to a Youtube video showing all the required functions: https://youtu.be/spPMkCekizI 
 
 ------------------------------------------------------------------------------------------------------------
 
