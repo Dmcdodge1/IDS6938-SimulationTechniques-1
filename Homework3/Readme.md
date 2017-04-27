@@ -1,4 +1,8 @@
-﻿# Homework 3 : Agent based Simulation Assignment 
+﻿# Devyn Dodge
+
+Due: Friday 4/28/2017 (three extra days saved during the semester and the one extra stated in class)
+
+# Homework 3 : Agent based Simulation Assignment 
 
 ## IDS6938-Simulation Techniques - [University of Central Florida](http://www.ist.ucf.edu/grad/)
 
@@ -48,8 +52,19 @@ SIMAgent::KNoise,	SIMAgent::KWander, SIMAgent::KAvoid, SIMAgent::TAvoid, SIMAgen
 -----------------------------------------------------------------------------------------------------------
 
 **(b) - 20 points**: In this part of the assignment you will need to implement 6 types of individual behaviors and 5 types of group behaviors. Create the following behaviors through appropriate computation of V<sub> d</sub>  and θ<sub>d</sub>  commands:
+
+------------------------------------------------------------------------------------------------------------
+
 * Seek
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Seek.PNG)
+
+------------------------------------------------------------------------------------------------------------
+
 * Flee
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Flee.PNG)
+
+------------------------------------------------------------------------------------------------------------
+
 * Arrival
 * Departure
 * Wander
