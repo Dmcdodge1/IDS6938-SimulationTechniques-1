@@ -150,8 +150,9 @@ Below is my maze simulation with the heat map, statistics, parameters, and in a 
 ------------------------------------------------------------------------------------------------------------
 
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedistrian simulation to visualize your experiment's results.
-
+------------------------------------------------------------------------------------------------------------
 For this part of the assignment, I decided to do Classroom Building 1 on campus with normal daily routines. You can see students taking the stairwell, the usage of the patio and the hustle and bustle of the "busy" students.
+
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/CB1.PNG)
 
 In my sceanrio, people can only enter on one side and leave through the other. The side they enter from is Memory Mall, which is the side that gets the most traffic. Every room has multiple ways into it, So I porvided many selectOutputs to each room to simulate the choices people have. 
