@@ -142,6 +142,10 @@ Below is the Subway Entrance Simulation with appropriate boundaries and walls wi
 
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedistrians change how they navigate the maze.
 
+Below is my maze simulation with the heat map, statistics, parameters, and in a 3D version. The file to this will be saved up. I have to say. I really enjoyed this assignment. I can see using this often in the real world for work. It was fun watching the guys run around. Setting up the maze was tricky at first. To begin with, they would automatically just head to the end, but i figured out how to avoid that. Once again. This was interesting and fun. I would recommend this for your following semesters.
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/maze1.PNG)
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/maze3.PNG)
+
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedistrian simulation to visualize your experiment's results.
 
 
