@@ -133,8 +133,12 @@ Note: Feel free to reference the code saved in the src or build folder. Here is 
 
 # Part 2 - Simulating a simple pedestrian flow
 
-![](images/flow.png?raw=true)
+Below is the Subway Entrance Simulation with appropriate boundaries and walls with the pedestrian density map and statistics of people along side it.
 
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/Subway.PNG)
+
+
+------------------------------------------------------------------------------------------------------------
 **(a) - 0 points**: Follow the Anylogic example for the [Subway Entrance example](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/tutorial/Subway_Entrance.html). Create the appropriate [boundaries and walls](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/markup/Wall.html), and the display ther pedestrian density map, [statistics](https://help.anylogic.com/index.jsp?nav=/4_1_5), [2D and 3D animations](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Animation.html).
 
 ![](images/density.png?raw=true)
