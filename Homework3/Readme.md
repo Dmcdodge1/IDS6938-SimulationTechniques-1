@@ -142,7 +142,7 @@ Below is the Subway Entrance Simulation with appropriate boundaries and walls wi
 
 **(b) - 20 points**: Create a maze. Generate the pdm, stats, and animations like before. Vary [parameters in your agents](https://help.anylogic.com/index.jsp?topic=/com.xj.anylogic.help/html/_PL/reference/Attributes.html) to give them different behaviors and show the pedistrians change how they navigate the maze.
 
-Below is my maze simulation with the heat map, statistics, parameters, and in a 3D version. The file to this will be saved up. I have to say. I really enjoyed this assignment. I can see using this often in the real world for work. It was fun watching the guys run around. Setting up the maze was tricky at first. To begin with, they would automatically just head to the end, but i figured out how to avoid that. Once again. This was interesting and fun. I would recommend this for your following semesters.
+Below is my maze simulation with the heat map, statistics, parameters, and in a 3D version.The file to this will be saved up. I have to say. I really enjoyed this assignment. I can see using this often in the real world for work. It was fun watching the guys run around. Setting up the maze was tricky at first. To begin with, they would automatically just head to the end, but i figured out how to avoid that. Once again. This was interesting and fun. I would recommend this for your following semesters.
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/maze1.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/maze2.PNG)
 ![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/maze3.PNG)
@@ -151,5 +151,20 @@ Below is my maze simulation with the heat map, statistics, parameters, and in a 
 
 **(c) - 30 points**: Model and analyze a building (or floor/outdoor space/stadium) on campus. (There is help on piazza how to find rough building plans - we expect something plausible). Create a senario: evacuation, daily office routine, special event, normal egress.... etc., and model and design your own experiment to determine if the building design suits the needs of its users. Start with photographs of your site, describe your site, describe your senario and hypothesis. Then use an agent-based pedistrian simulation to visualize your experiment's results.
 
+For this part of the assignment, I decided to do Classroom Building 1 on campus with normal daily routines. You can see students taking the stairwell, the usage of the patio and the hustle and bustle of the "busy" students.
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/CB1.PNG)
+
+In my sceanrio, people can only enter on one side and leave through the other. The side they enter from is Memory Mall, which is the side that gets the most traffic. Every room has multiple ways into it, So I porvided many selectOutputs to each room to simulate the choices people have. 
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/CB2.PNG)
+
+If you take a look at the heat map you can see how comical it is. Unfortunately, this is pretty spot on for a normal day of classes. Everybody is bunched up around the entrance and the area with mulitple choices. It's crazy and really funny that this is spot on. When the class of students is leaving a lecture hall and the students waiting for the their class to star run into each other, it is exactly like this. You can see the "people" start to get creative to get where they need to be. They enter through a different door or go around the busy sections of the building. 
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/CB3.PNG)
+
+Look at all the poor students. Glad I don't have classes on campus anymore.
+![Alt text](https://github.com/Dmcdodge1/IDS6938-SimulationTechniques-1/blob/master/Homework3/images/CB4.PNG)
+
+The AnyLogic folder contains the simulation if you care to run it as well. 
+
+As for whetheror not the building suits the students needs... Experiencing this building first hand and reconfirming my hatred for this building, I would say..... maybe. It isn;t the building designer's fault that the students just happen to hang out all in the same area, although... constructing that many entrances to a lot fo different rooms so close together, may have been a design flaw. The hallways are always packed and difficult to walk through. The simulation can prove that. Maybe just expand the hallways a little more to allow for more traffic.. or will that just allow more students to sit in front of their class rooms and clog up even more area?
 
 
